@@ -1,0 +1,5 @@
+config.yml
+.sass-cache/*
+.vscode/settings.json
+.vscode/notes.txt
+.idea/*

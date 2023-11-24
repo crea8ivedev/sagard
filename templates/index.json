@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Man Collection",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "test_button": "2",
+        "image": "shopify:\/\/shop_images\/wrist-watch-on-driving-arm.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "8922001d-79ff-444c-93bd-723d3be8cd86": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20299557798173__8922001d-79ff-444c-93bd-723d3be8cd86-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--20299557798173__8922001d-79ff-444c-93bd-723d3be8cd86-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20299557798173__8922001d-79ff-444c-93bd-723d3be8cd86-heading-1",
+        "template--20299557798173__8922001d-79ff-444c-93bd-723d3be8cd86-text-1"
+      ],
+      "settings": {
+        "background_color": "#d3fcf6",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c43ba333-7417-4113-aca3-946a01038eea": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mans-collection"
+          }
+        },
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "woman-collection"
+          }
+        },
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-arrival-2024"
+          }
+        }
+      },
+      "block_order": [
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-1",
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-2",
+        "template--20299557798173__c43ba333-7417-4113-aca3-946a01038eea-featured_collection-3"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "693b6823-9e2d-4fe3-bfc8-543dd330e8ce": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "8922001d-79ff-444c-93bd-723d3be8cd86",
+    "c43ba333-7417-4113-aca3-946a01038eea",
+    "693b6823-9e2d-4fe3-bfc8-543dd330e8ce"
+  ]
+}
