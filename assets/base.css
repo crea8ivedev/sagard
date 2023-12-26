@@ -5,7 +5,7 @@
   --alpha-badge-border: 0.1;
 }
 .field__input, .select__select, .customer .field input, .customer select {
-    background-color: transparent;
+    background-color: transparent !important;
    
 }
 
