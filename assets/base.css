@@ -4,6 +4,10 @@
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
 }
+.field__input, .select__select, .customer .field input, .customer select {
+    background-color: transparent;
+   
+}
 
 .product-card-wrapper .card,
 .contains-card--product {
