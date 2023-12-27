@@ -6,7 +6,9 @@
 }
 .field__input, .select__select, .customer .field input, .customer select {
     background-color: transparent !important;
-   
+}
+.quantity:before {
+    background: transparent !important;
 }
 
 .product-card-wrapper .card,
