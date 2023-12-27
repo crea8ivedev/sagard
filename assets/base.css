@@ -10,6 +10,9 @@
 .quantity:before {
     background: transparent !important;
 }
+.button, .shopify-challenge__button, .customer button {
+    background-color: transparent !important;
+}
 
 .product-card-wrapper .card,
 .contains-card--product {
