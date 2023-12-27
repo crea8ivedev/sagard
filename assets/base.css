@@ -16,6 +16,10 @@
 quantity-popover .quantity {
     background: transparent !important;
 }
+.cart__ctas button {
+    width: 100%;
+    background-color: black !important;
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
