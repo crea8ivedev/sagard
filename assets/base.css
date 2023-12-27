@@ -20,6 +20,10 @@ quantity-popover .quantity {
     width: 100%;
     background-color: black !important;
 }
+.shopify-challenge__container .shopify-challenge__button {
+
+    background-color: black !important;
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
