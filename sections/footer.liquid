@@ -380,7 +380,7 @@
     Shopify.cart = {{ cart | json }};
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
-           console.log(Shopify.cart.items);
+           console.log(Shopify.cart.items[i].id);
     {% for item in Shopify.cart.items %}
       console.log(item);
       if({{ item.id }} === freeProductVariantId){
