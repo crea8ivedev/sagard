@@ -6,7 +6,7 @@ console.log('custom done');
  
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
-
+    console.log(cart);
      for(item of cart.items){
        
       if( item.id  === freeProductVariantId){
