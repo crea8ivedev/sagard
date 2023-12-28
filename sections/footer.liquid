@@ -387,9 +387,11 @@
         for (var i=0; i<Shopify.cart.items.length; i++) {
           if(Shopify.cart.items[i].product_id === freeProductVariantId){
             cartContainsQualifyingProduct = false;
+          }else{
+            cartContainsQualifyingProduct = true;
           }
         }
-         cartContainsQualifyingProduct = true;
+         
       }
     }
     
