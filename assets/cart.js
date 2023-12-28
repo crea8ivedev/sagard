@@ -248,6 +248,7 @@ if (!customElements.get('cart-note')) {
 window.onload = function(){
     let cartContainsFreeProduct = false;
     let cartContainsQualifyingProduct = false;
+  console.log(cart);
     Shopify.cart = {{ cart | json }};
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
