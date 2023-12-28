@@ -384,13 +384,17 @@
     for (var i=0; i<Shopify.cart.items.length; i++) {
 
       if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
-        console.log('ss');
+        for (var i=0; i<Shopify.cart.items.length; i++) {
+          if(Shopify.cart.items[i].product_id === freeProductVariantId){
+            cartContainsQualifyingProduct = false;
+          }
+        }
          cartContainsQualifyingProduct = true;
       }
     }
     
     if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
-        
+      
       let formData = {
        'items': [{
         'id': freeProductVariantId,
