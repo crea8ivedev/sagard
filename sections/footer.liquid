@@ -382,6 +382,7 @@
     const freeProductVariantId = 47361341063453;
            console.log(Shopify.cart.items);
     {% for item in Shopify.cart.items %}
+      console.log(item);
       if({{ item.id }} === freeProductVariantId){
         cartContainsFreeProduct = true; 
       }
