@@ -391,8 +391,10 @@
     }
     
     if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
+      jQuery.post('/cart/add.json', { quantity: 1, id: freeProductVariantId })
+      .done(function() {window.location.reload()}) 
       
-      let formData = {
+    /*  let formData = {
        'items': [{
         'id': freeProductVariantId,
         'quantity': 1
@@ -411,7 +413,7 @@
       })
       .catch((error) => {
         console.error('Error:', error);
-      });
+      });*/
         
      } 
   }
