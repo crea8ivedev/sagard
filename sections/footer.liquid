@@ -405,7 +405,7 @@
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
-        console.log('sf');
+        
       })
       .then(response => {
         return response.json();
@@ -413,7 +413,7 @@
       .catch((error) => {
         console.error('Error:', error);
       });
-        
+        console.log('sf');
      } 
   }
   
