@@ -388,8 +388,9 @@
       }
     }
     
-    if(cartContainsQualifyingProduct) {
-      console.log('yes');
+    if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
+      
+      console.log(cartContainsQualifyingProduct);
       
       let formData = {
        'items': [{
