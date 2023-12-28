@@ -20,6 +20,9 @@ quantity-popover .quantity {
     width: 100%;
     background-color: black !important;
 }
+.product-form__input label {
+    color: #fff !important;
+}
 .shopify-challenge__container .shopify-challenge__button {
 
     background-color: black !important;
