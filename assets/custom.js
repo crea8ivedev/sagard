@@ -6,12 +6,12 @@ console.log('custom done');
  
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
-           console.log(freeProductVariantId);
-    {% for item in cart.items %}
-      if({{ item.id }} === freeProductVariantId){
+
+    {%- for item in cart.items -%}
+      if( item.id  === freeProductVariantId){
         cartContainsFreeProduct = true; 
       }
-      if({{ item.id }} === qualifyingProductVariantId){
+      if( item.id  === qualifyingProductVariantId){
          cartContainsQualifyingProduct = true;
       }
     {% endfor %}
