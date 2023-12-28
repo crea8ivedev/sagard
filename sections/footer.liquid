@@ -380,8 +380,8 @@
     Shopify.cart = {{ cart | json }};
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
-           console.log(Shopify.cart.items[i].id);
-    {% for item in Shopify.cart.items %}
+           console.log(Shopify.cart.items);
+    /*{% for item in Shopify.cart.items %}
       console.log(item);
       if({{ item.id }} === freeProductVariantId){
         cartContainsFreeProduct = true; 
@@ -389,7 +389,11 @@
       if({{ item.id }} === qualifyingProductVariantId){
          cartContainsQualifyingProduct = true;
       }
-    {% endfor %}
+    {% endfor %}*/
+
+    for (var i=0; i<Shopify.cart.items.length; i++) {
+      console.log(Shopify.cart.items[i].id);
+    }
     
 //  If cart contains qualifying product and doesn't already contain free product, add qty 1 of free product
     if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
