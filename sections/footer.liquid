@@ -386,7 +386,7 @@
 
       if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
         for (var i=0; i<Shopify.cart.items.length; i++) {
-          //console.log(Shopify.cart.items[i].id);
+          console.log(Shopify.cart.items[i].id);
           if(Shopify.cart.items[i].id === freeProductVariantId){
             cartContainsQualifyingProduct = false;
           }else{
