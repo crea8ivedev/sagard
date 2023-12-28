@@ -396,7 +396,7 @@
     /*  if({{ item.id }} === freeProductVariantId){
         cartContainsFreeProduct = true; 
       } */
-      if(Shopify.cart.items[i].id === qualifyingProductVariantId){
+      if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
         console.log('ss');
          cartContainsQualifyingProduct = true;
       }
