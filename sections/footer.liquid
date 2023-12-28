@@ -405,8 +405,28 @@
 //  If cart contains qualifying product and doesn't already contain free product, add qty 1 of free product
     if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
         
-      jQuery.post('/cart/add.json', { quantity: 1, id: freeProductVariantId })
-      .done(function() {window.location.reload()})    
+      /*jQuery.post('/cart/add.json', { quantity: 1, id: freeProductVariantId })
+      .done(function() {window.location.reload()})   */
+      let formData = {
+       'items': [{
+        'id': freeProductVariantId,
+        'quantity': 1
+        }]
+      };
+      
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
         
      } 
   }
