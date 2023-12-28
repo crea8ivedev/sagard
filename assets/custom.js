@@ -1,6 +1,6 @@
 console.log('custom done');
   
-  window.onload = function(){
+  /*window.onload = function(){
     let cartContainsFreeProduct = false;
     let cartContainsQualifyingProduct = false;
  
@@ -25,5 +25,5 @@ console.log('custom done');
       .done(function() {window.location.reload()})    
         
      } 
-  }
+  }*/
   
