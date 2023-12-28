@@ -382,7 +382,9 @@
     const freeProductVariantId = 47361341063453;
 
     for (var i=0; i<Shopify.cart.items.length; i++) {
-
+      if( Shopify.cart.items[i].id  === freeProductVariantId){
+        cartContainsFreeProduct = true; 
+      }
       if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
          cartContainsQualifyingProduct = true;
       }
