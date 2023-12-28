@@ -7,14 +7,16 @@ console.log('custom done');
     const qualifyingProductVariantId = 8945416077597; 
     const freeProductVariantId = 47361341063453;
 
-    {%- for item in cart.items -%}
+     for(item of cart.items){
+       
       if( item.id  === freeProductVariantId){
         cartContainsFreeProduct = true; 
       }
       if( item.id  === qualifyingProductVariantId){
          cartContainsQualifyingProduct = true;
       }
-    {% endfor %}
+     }
+   
     
 //  If cart contains qualifying product and doesn't already contain free product, add qty 1 of free product
     if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
