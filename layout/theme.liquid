@@ -332,48 +332,50 @@
       };
     </script>
     <script>
-      window.onload = function(){
-        let cartContainsFreeProduct = false;
-        let cartContainsQualifyingProduct = false;
-        Shopify.cart = {{ cart | json }};
-        const qualifyingProductVariantId = 8945416077597;
-        const freeProductVariantId = 47361341063453;
+        window.onload = function(){
+          let cartContainsFreeProduct = false;
+          let cartContainsQualifyingProduct = false;
+          Shopify.cart = {{ cart | json }};
+          const qualifyingProductVariantId = 8945416077597;
+          const freeProductVariantId = 47361341063453;
 
-        for (var i=0; i<Shopify.cart.items.length; i++) {
-          if( Shopify.cart.items[i].id  === freeProductVariantId){
-            cartContainsFreeProduct = true;
+          for (var i=0; i<Shopify.cart.items.length; i++) {
+            if( Shopify.cart.items[i].id  === freeProductVariantId){
+              cartContainsFreeProduct = true;
+            }
+            if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
+               cartContainsQualifyingProduct = true;
+            }
           }
-          if(Shopify.cart.items[i].product_id === qualifyingProductVariantId){
-             cartContainsQualifyingProduct = true;
-          }
+
+          if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
+
+            let formData = {
+             'items': [{
+              'id': freeProductVariantId,
+              'quantity': 1
+              }]
+            };
+
+            fetch(window.Shopify.routes.root + 'cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(formData)
+
+            })
+            .then(response => {
+      window.location.reload();
+
+              return response.json();
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+
+           }
         }
-
-        if(cartContainsQualifyingProduct && cartContainsFreeProduct === false) {
-
-          let formData = {
-           'items': [{
-            'id': freeProductVariantId,
-            'quantity': 1
-            }]
-          };
-
-          fetch(window.Shopify.routes.root + 'cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-
-          })
-          .then(response => {
-            return response.json();
-          })
-          .catch((error) => {
-            console.error('Error:', error);
-          });
-
-         }
-      }
     </script>
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
