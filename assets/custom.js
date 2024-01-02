@@ -33,7 +33,7 @@
     }else{
       console.log('2');
       var data = {
-            id: pro_id,
+            id: 8945416077597,
             quantity: 1
       };
     }
