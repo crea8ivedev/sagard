@@ -25,13 +25,13 @@
     if(pro_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-            id: [qualifyingProductVariantId,freeProductVariantId],
+            id: [47364165763357],
             quantity: 1
       };
     }else{
       console.log('2');
       var data = {
-            id: pro_id,
+            id: 47364165763357,
             quantity: 1
       };
     }
