@@ -18,7 +18,6 @@
 // })
 
   function instantBuy(e) {
-     e.preventDefault()
     console.log(e);
     console.log(111);
   }
