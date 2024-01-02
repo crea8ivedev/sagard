@@ -26,7 +26,7 @@
       console.log('1');
       var data = {
        
-            id: [qualifyingProductVariantId,freeProductVariantId],
+            id: [8945416077597,47361341063453],
             quantity: 1
          
       };
