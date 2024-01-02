@@ -23,10 +23,10 @@
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
     console.log(var_id);
-    if(pro_id == qualifyingProductVariantId) {
+    if(var_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-            id: [47364165763357],
+            id: [pro_id, freeProductVariantId],
             quantity: 1
       };
     }else{
