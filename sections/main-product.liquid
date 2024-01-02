@@ -397,7 +397,7 @@
                 {%- endif -%}
               </div>
             <div class="buy_now">
-            <form method="post" class="variants buy-now" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
+            <form action="cart/add" method="post" class="variants buy-now" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
               <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
               <button class="button buynow-btn" title="Buy" id="formBtn" onClick="instantBuy()">
                 <span>Buy now - {{ product.price | money }}</span>
