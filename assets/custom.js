@@ -32,12 +32,8 @@
     }else{
       console.log('2');
       var data = {
-        items: [
-          {
             id: 47364165763357,
             quantity: 1
-          }
-        ]
       };
     }
     
