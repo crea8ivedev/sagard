@@ -54,7 +54,7 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-     window.location.href = '/checkout';
+     //window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
