@@ -27,8 +27,16 @@
     if(var_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-            id: [pro_id, freeProductVariantId],
-            quantity: 1
+             items: [
+              {
+                id: pro_id,
+                quantity: 1
+              },
+               {
+                id: freeProductVariantId,
+                quantity: 1
+              }
+            ]
       };
     }else{
       console.log('2');
