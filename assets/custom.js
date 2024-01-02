@@ -44,7 +44,7 @@ if (variantId) {
       var data = {
              items: [
               {
-                id: pro_id,
+                id: variantId,
                 quantity: qty
               },
                {
@@ -56,7 +56,7 @@ if (variantId) {
     }else{
       console.log('2');
       var data = {
-            id: pro_id,
+            id: variantId,
             quantity: qty
       };
     }
