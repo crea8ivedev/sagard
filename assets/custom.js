@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
         contentType: false,
         processData: false,
         success: function(data) {
-            document.location.href = '/cart/checkout';
+            //document.location.href = '/cart/checkout';
         }
     });
 })
