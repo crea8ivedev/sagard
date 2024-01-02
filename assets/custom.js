@@ -19,15 +19,16 @@
 
   function instantBuy() {
       var pro_id = jQuery('#variant_id').val();
-      var qty = jQuery('.quantity__input').val();
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
     console.log(pro_id);
     if(pro_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-            id: [8945416077597,47361341063453],
+       
+            id: [qualifyingProductVariantId,freeProductVariantId],
             quantity: 1
+         
       };
     }else{
       console.log('2');
@@ -48,8 +49,7 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
-     //window.location.href = '/checkout';
+     window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
