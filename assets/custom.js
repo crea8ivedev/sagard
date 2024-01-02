@@ -1,4 +1,6 @@
 console.log('custom done');
+jQuery(document).ready(function(){
+  
   jQuery('#buy_now_button').on('click', function(e) {
     var form = $('#addToCart');
     e.preventDefault()
@@ -15,6 +17,9 @@ console.log('custom done');
         }
     });
 })
+
+});
+  
   /*window.onload = function(){
     let cartContainsFreeProduct = false;
     let cartContainsQualifyingProduct = false;
