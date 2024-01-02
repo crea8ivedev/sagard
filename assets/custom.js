@@ -24,12 +24,10 @@
     if(pro_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-        items: [
-          {
+       
             id: [47364165763357,47361341063453],
             quantity: 1
-          }
-        ]
+         
       };
     }else{
       console.log('2');
