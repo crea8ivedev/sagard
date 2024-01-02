@@ -18,17 +18,26 @@
 // })
 
   function instantBuy(e) {
-    var id = '';
-  $.ajax({
-         type: 'POST',                             
-        url: '/cart/add.js',
-        dataType: 'json',                               
-        data: {
-          id:47364165763357,
-          quantity:1
-        },
-        success: function(data) {
-            document.location.href = '/checkout';
-        }
-    });
+    var data = {
+  items: [
+    {
+      id: 47364165763357,
+      quantity: 1
+    }
+  ]
+};
+    
+fetch('/cart/add.js', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'X-Requested-With': 'xmlhttprequest'
+  },
+  body: JSON.stringify(data)
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log('Item added to cart:', data);
+  })
+  .catch(error => console.error('Error adding item to cart:', error));
   }
