@@ -18,6 +18,15 @@
 // })
 
   function instantBuy(e) {
-    console.log(e);
-    console.log(111);
+  $.ajax({
+   type: 'POST',                             
+        url: '/cart/add.js',
+        dataType: 'json',                               
+        data: form.serialize(),
+        contentType: false,
+        processData: false,
+        success: function(data) {
+            //document.location.href = '/cart/checkout';
+        }
+    });
   }
