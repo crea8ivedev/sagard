@@ -20,27 +20,20 @@
   function instantBuy() {
    var currentUrl = window.location.href;
 
-// Parse the URL
-var url = new URL(currentUrl);
+    // Parse the URL
+    var url = new URL(currentUrl);
+    
+    // Get the 'variant' parameter from the search string
+    var variantId = url.searchParams.get('variant');
 
-// Get the 'variant' parameter from the search string
-var variantId = url.searchParams.get('variant');
-
-// Check if the 'variant' parameter exists and has a value
-if (variantId) {
-  // Do something with the variant ID
-  console.log('Variant ID:', variantId);
-} else {
-  console.log('Variant parameter not found or has no value');
-}
-      var pro_id = jQuery('#variant_id').val();
+    var pro_id = jQuery('#variant_id').val();
     var var_id = jQuery('#variant_id').data('id');
     var qty = jQuery('.quantity__input').val();
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
-    console.log(qty);
+  
     if(var_id == qualifyingProductVariantId) {
-      console.log('1');
+   
       var data = {
              items: [
               {
@@ -54,7 +47,7 @@ if (variantId) {
             ]
       };
     }else{
-      console.log('2');
+     
       var data = {
             id: variantId,
             quantity: qty
@@ -72,7 +65,6 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
      window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
