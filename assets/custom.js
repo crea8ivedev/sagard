@@ -24,12 +24,13 @@
         url: '/cart/add.js',
         dataType: 'json',                               
         data: {
-          id:
+          id:47364165763357,
+          quantity:1
         },
         contentType: false,
         processData: false,
         success: function(data) {
-            //document.location.href = '/cart/checkout';
+            document.location.href = '/cart/checkout';
         }
     });
   }
