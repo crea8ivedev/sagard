@@ -19,6 +19,7 @@
 
   function instantBuy() {
       var pro_id = jQuery('#variant_id').val();
+      var qty = jQuery('.quantity__input').val();
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
     console.log(pro_id);
@@ -26,7 +27,7 @@
       console.log('1');
       var data = {
        
-            id: [qualifyingProductVariantId,freeProductVariantId],
+            id: [pro_id,freeProductVariantId],
             quantity: 1
          
       };
@@ -49,7 +50,7 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-     window.location.href = '/checkout';
+     //window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
