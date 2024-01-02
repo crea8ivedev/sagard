@@ -28,7 +28,6 @@
           quantity:1
         },
         contentType: false,
-        processData: false,
         success: function(data) {
             document.location.href = '/checkout';
         }
