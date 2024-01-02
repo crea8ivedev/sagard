@@ -20,7 +20,7 @@
   function instantBuy(e) {
     var id = '';
   $.ajax({
-   type: 'POST',                             
+         type: 'POST',                             
         url: '/cart/add.js',
         dataType: 'json',                               
         data: {
