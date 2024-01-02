@@ -18,14 +18,29 @@
 // })
 
   function instantBuy() {
-    var data = {
-  items: [
-    {
-      id: 47364165763357,
-      quantity: 1
+      var pro_id = jQuery('#variant_id').val();
+    const qualifyingProductVariantId = 8945416077597;
+    console.log(pro_id);
+    if(pro_id == qualifyingProductVariantId) {
+      var data = {
+        items: [
+          {
+            id: [47364165763357,47361341063453],
+            quantity: 1
+          }
+        ]
+      };
+    }else{
+      var data = {
+        items: [
+          {
+            id: 47364165763357,
+            quantity: 1
+          }
+        ]
+      };
     }
-  ]
-};
+    
     
 fetch('/cart/add.js', {
   method: 'POST',
