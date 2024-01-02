@@ -22,6 +22,7 @@
     const qualifyingProductVariantId = 8945416077597;
     console.log(pro_id);
     if(pro_id == qualifyingProductVariantId) {
+      console.log('1');
       var data = {
         items: [
           {
@@ -31,6 +32,7 @@
         ]
       };
     }else{
+      console.log('2');
       var data = {
         items: [
           {
