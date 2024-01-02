@@ -1,9 +1,9 @@
 
 jQuery(document).ready(function(){
   
-  jQuery('#buy_now_button').on('click', function(e) {
-    var form = $('#addToCart');
-    e.preventDefault()
+  jQuery('#buy_now_button').on('submit', function(e) {
+    e.preventDefault();
+     var form = $('#addToCart');
   console.log(form.serialize());
     $.ajax({
         type: 'POST',                             
