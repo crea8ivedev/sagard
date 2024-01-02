@@ -20,19 +20,20 @@
   function instantBuy() {
       var pro_id = jQuery('#variant_id').val();
     const qualifyingProductVariantId = 8945416077597;
+    const freeProductVariantId = 47361341063453;
     console.log(pro_id);
     if(pro_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
        
-            id: [47364165763357,47361341063453],
+            id: [qualifyingProductVariantId,freeProductVariantId],
             quantity: 1
          
       };
     }else{
       console.log('2');
       var data = {
-            id: 47364165763357,
+            id: pro_id,
             quantity: 1
       };
     }
