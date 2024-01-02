@@ -21,7 +21,7 @@
     var currentUrl = window.location.href;
     var urlParams = new URLSearchParams(currentUrl);
     var variantId = urlParams.get('variant');
-    console.log(currentUrl);
+    console.log(urlParams);
       var pro_id = jQuery('#variant_id').val();
     var var_id = jQuery('#variant_id').data('id');
     var qty = jQuery('.quantity__input').val();
