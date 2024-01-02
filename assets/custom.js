@@ -41,7 +41,7 @@
     }else{
       console.log('2');
       var data = {
-            id: 47364165763357,
+            id: pro_id,
             quantity: qty
       };
     }
