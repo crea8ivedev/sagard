@@ -27,7 +27,6 @@
           id:47364165763357,
           quantity:1
         },
-        contentType: false,
         success: function(data) {
             document.location.href = '/checkout';
         }
