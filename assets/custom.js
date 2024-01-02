@@ -17,7 +17,7 @@
 //     // });
 // })
 
-  function instantBuy(e) {
+  function instantBuy() {
     var data = {
   items: [
     {
