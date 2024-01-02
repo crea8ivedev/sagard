@@ -397,7 +397,10 @@
                 {%- endif -%}
               </div>
             <div class="buy_now">
+              <form action="cart/add" method="POST" type="submit">
               <button id="buy_now_button" class="button button--full-width button--secondery">Buy Now</button>
+              <input type="hidden" value="{{ product.variants[0].id }}" >  
+            </form>
             </div>
             {%- when 'popup' -%}
               <modal-opener
