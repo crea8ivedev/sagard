@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
   jQuery('#buy_now_button').on('click', function(e) {
     var form = $('#addToCart');
     e.preventDefault()
-
+  console.log('dr');
     $.ajax({
         type: 'POST',                             
         url: '/cart/add.js',
