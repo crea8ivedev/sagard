@@ -173,7 +173,6 @@
                   {%- endif -%}
                 {%- endif -%}
               </p>
-            <button>Buy Now</button>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -397,6 +396,7 @@
                   </volume-pricing>
                 {%- endif -%}
               </div>
+            <button>Buy Now</button>
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
