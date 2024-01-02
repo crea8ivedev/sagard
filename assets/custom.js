@@ -17,7 +17,8 @@
 //     // });
 // })
 
-  function instantBuy() {
+  function instantBuy(e) {
      
-    console.log(123123);
+    console.log(e);
+    console.log(111);
   }
