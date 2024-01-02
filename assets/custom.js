@@ -19,6 +19,5 @@
 
   function instantBuy(e) {
      e.preventDefault();
-     var form = $('#buy_now_form');
-    console.log(form);
+    console.log(123123);
   }
