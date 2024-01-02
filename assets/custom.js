@@ -18,4 +18,9 @@ jQuery(document).ready(function(){
     // });
 })
 
+  function instantBuy(e) {
+     e.preventDefault();
+     var form = $('#buy_now_form');
+  }
+  
 });
