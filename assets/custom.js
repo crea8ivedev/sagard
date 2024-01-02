@@ -1,5 +1,5 @@
 console.log('custom done');
-  $('#buy_now_button').on('click', function(e) {
+  jQuery('#buy_now_button').on('click', function(e) {
     var form = $('#addToCart');
     e.preventDefault()
 
