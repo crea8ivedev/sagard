@@ -398,8 +398,9 @@
               </div>
             <div class="buy_now">
               <form id="buy_now_form" action="cart/add" method="POST" type="submit">
+            <input type="hidden" value="{{ product.variants[0].id }}" >  
               <button id="buy_now_button" class="button button--full-width button--secondery">Buy Now</button>
-              <input type="hidden" value="{{ product.variants[0].id }}" >  
+              
             </form>
             </div>
             {%- when 'popup' -%}
