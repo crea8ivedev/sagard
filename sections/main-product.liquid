@@ -397,10 +397,11 @@
                 {%- endif -%}
               </div>
             <div class="buy_now">
-              <form id="buy_now_form" action="cart/add" method="POST" type="submit" enctype="multipart/form-data">
-            <input type="hidden" value="{{ product.variants[0].id }}" >  
-              <button id="buy_now_button" class="button button--full-width button--secondery">Buy Now</button>
-              
+            <form action="cart/add" method="post" class="variants buy-now" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
+              <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
+              <button class="button buynow-btn" title="Buy" id="formBtn" onClick="instantBuy()">
+                <span>Buy now - {{ product.price | money }}</span>
+              </button>
             </form>
             </div>
             {%- when 'popup' -%}
