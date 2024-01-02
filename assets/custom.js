@@ -18,6 +18,10 @@
 // })
 
   function instantBuy() {
+    var currentUrl = window.location.href;
+    var urlParams = new URLSearchParams(currentUrl);
+    var variantId = urlParams.get('variant');
+    console.log(variantId);
       var pro_id = jQuery('#variant_id').val();
     var var_id = jQuery('#variant_id').data('id');
     var qty = jQuery('.quantity__input').val();
@@ -58,7 +62,7 @@ fetch('/cart/add.js', {
   .then(response => response.json())
   .then(data => {
     console.log(data);
-     window.location.href = '/checkout';
+    // window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
