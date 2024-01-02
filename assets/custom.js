@@ -18,10 +18,22 @@
 // })
 
   function instantBuy() {
-    var currentUrl = window.location.href;
-    var urlParams = new URLSearchParams(currentUrl);
-    var variantId = urlParams.get('variant');
-    console.log(urlParams);
+   var currentUrl = "https://sagar-d12.myshopify.com/products/soft-toy?variant=47364165796125";
+
+// Parse the URL
+var url = new URL(currentUrl);
+
+// Get the 'variant' parameter from the search string
+var variantId = url.searchParams.get('variant');
+
+// Check if the 'variant' parameter exists and has a value
+if (variantId) {
+  // Do something with the variant ID
+  console.log('Variant ID:', variantId);
+} else {
+  console.log('Variant parameter not found or has no value');
+}
+
       var pro_id = jQuery('#variant_id').val();
     var var_id = jQuery('#variant_id').data('id');
     var qty = jQuery('.quantity__input').val();
