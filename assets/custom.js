@@ -25,15 +25,13 @@
     if(pro_id == qualifyingProductVariantId) {
       console.log('1');
       var data = {
-       
-            id: [8945416077597,47361341063453],
+            id: [qualifyingProductVariantId,freeProductVariantId],
             quantity: 1
-         
       };
     }else{
       console.log('2');
       var data = {
-            id: 8945416077597,
+            id: pro_id,
             quantity: 1
       };
     }
@@ -49,8 +47,7 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
-     //window.location.href = '/checkout';
+     window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
