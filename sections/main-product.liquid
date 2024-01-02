@@ -397,12 +397,10 @@
                 {%- endif -%}
               </div>
             <div class="buy_now">
-            <form action="cart/add" method="post" class="variants buy-now" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
-              <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
               <button class="button buynow-btn" title="Buy" id="formBtn" onClick="instantBuy(e)">
                 <span>Buy now - {{ product.price | money }}</span>
               </button>
-            </form>
+            
             </div>
             {%- when 'popup' -%}
               <modal-opener
