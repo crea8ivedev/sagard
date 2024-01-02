@@ -27,6 +27,9 @@ quantity-popover .quantity {
 
     background-color: black !important;
 }
+button.product-form__submit {
+    color: #000 !important;
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
