@@ -30,7 +30,7 @@
              items: [
               {
                 id: pro_id,
-                quantity: 1
+                quantity: qty
               },
                {
                 id: freeProductVariantId,
@@ -42,7 +42,7 @@
       console.log('2');
       var data = {
             id: 47364165763357,
-            quantity: 1
+            quantity: qty
       };
     }
     
