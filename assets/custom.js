@@ -18,11 +18,14 @@
 // })
 
   function instantBuy(e) {
+    var id = '';
   $.ajax({
    type: 'POST',                             
         url: '/cart/add.js',
         dataType: 'json',                               
-        data: form.serialize(),
+        data: {
+          id:
+        },
         contentType: false,
         processData: false,
         success: function(data) {
