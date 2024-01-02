@@ -397,7 +397,7 @@
                 {%- endif -%}
               </div>
             <div class="buy_now">
-            <input type="hidden" value="{{ product.variants[0].id }}" id="variant_id">
+            <input type="hidden" value="{{ product.variants[0].id }}" data-id="{{ product.id }}" id="variant_id">
               <button class="button buynow-btn" title="Buy" id="formBtn" onClick="instantBuy()">
                 <span>Buy now - {{ product.price | money }}</span>
               </button>
