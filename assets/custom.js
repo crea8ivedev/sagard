@@ -19,7 +19,7 @@
 
   function instantBuy() {
    var currentUrl = window.location.href;
-
+    alert('yes');
     // Parse the URL
     var url = new URL(currentUrl);
     
