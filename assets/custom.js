@@ -30,7 +30,6 @@
     var qty = jQuery('.quantity__input').val();
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
-    console.log(qty);
         if(variantId){
       var variantIds = variantId;
     }else{
@@ -42,7 +41,7 @@
       var data = {
              items: [
               {
-                id: variantId,
+                id: variantIds,
                 quantity: qty
               },
                {
@@ -54,7 +53,7 @@
     }else{
      
       var data = {
-            id: variantId,
+            id: variantIds,
             quantity: qty
       };
     }
