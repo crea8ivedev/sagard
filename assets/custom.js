@@ -58,7 +58,7 @@
       };
     }
     
-    console.log(data);
+ 
 fetch('/cart/add.js', {
   method: 'POST',
   headers: {
@@ -69,8 +69,8 @@ fetch('/cart/add.js', {
 })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
-     //window.location.href = '/checkout';
+  
+     window.location.href = '/checkout';
   })
   .catch(error => console.error('Error adding item to cart:', error));
   }
