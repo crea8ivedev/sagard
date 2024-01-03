@@ -19,7 +19,6 @@
 
   function instantBuy() {
    var currentUrl = window.location.href;
-    alert('yes');
     // Parse the URL
     var url = new URL(currentUrl);
     
@@ -32,6 +31,12 @@
     const qualifyingProductVariantId = 8945416077597;
     const freeProductVariantId = 47361341063453;
     console.log(qty);
+        if(variantId){
+      var variantIds = variantId;
+    }else{
+      var variantIds = pro_id;
+    }
+    
     if(var_id == qualifyingProductVariantId) {
    
       var data = {
