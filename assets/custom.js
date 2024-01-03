@@ -54,7 +54,7 @@
       };
     }
     
-    
+    console.log(data);
 fetch('/cart/add.js', {
   method: 'POST',
   headers: {
